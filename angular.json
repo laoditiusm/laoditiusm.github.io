@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "laoditiusm.github.io": {
+    "LaoditiusM": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/laoditiusm.github.io",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,9 +25,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+               "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -60,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "laoditiusm.github.io:build:production"
+              "browserTarget": "LaoditiusM:build:production"
             },
             "development": {
-              "browserTarget": "laoditiusm.github.io:build:development"
+              "browserTarget": "LaoditiusM:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "laoditiusm.github.io:build"
+            "browserTarget": "LaoditiusM:build"
           }
         },
         "test": {
@@ -96,6 +101,6 @@
     }
   },
   "cli": {
-    "analytics": "827778fe-d69b-4f1e-95f0-cbfc0179ea68"
+    "analytics": "ed63dfa7-a433-4cd9-ad6c-56cdfdbaabfc"
   }
 }

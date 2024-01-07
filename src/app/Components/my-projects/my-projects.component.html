@@ -1,0 +1,24 @@
+<div class="container projects py-50" id="projects">
+    <div class="heading">
+        <h2>My Projects</h2>
+        <p>Check out my latest projects</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-12" *ngFor="let project of projects">
+            <div class="card border-r10">
+                <img [src]="project.image" class="img-fluid" alt="">
+                <div class="card-body">
+                    <h2 class="card-title fw-bold text-black text-uppercase subHeadingMargin-b">{{project.title}}</h2>
+                    <div class="card-text">
+                        <p>{{project.description}}</p>
+                        <p class="tools"><span class="tools-Heading fw-bold"></span> {{project.tools}}</p>
+                    </div>
+                    <div class="button-box">
+                        <a href="#"><button class="btn bg-black text-white" data-bs-toggle="modal" data-bs-target="#modal">View</button></a>
+                        <a [href]="project.link" alt="" class="socialImg"><img src="/assets/img/github-b.png" alt="" class="socialImg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

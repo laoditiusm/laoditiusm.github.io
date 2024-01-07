@@ -1,1 +1,1507 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu',sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*------------ Main Formats -----------*/
+body{
+    font-size: 1em;
+    background-color: #ececec;
+}
+
+p{
+    font-size: 1em;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 11px;
+    font-size: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.mg-banner{
+    padding: 0 7%;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3em;
+    color: #111;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 52px;
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+}
+
+.heading p {
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+.py-50{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+h2{
+    margin-bottom: 0;
+    margin-block-end: 0;
+}
+
+
+.mx-width{
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+ .arrowSize {
+     font-size: 0.6em;
+    position: relative;
+    top: -10px;
+    padding: 0 10px;
+ }
+
+ .transitionSpeed{
+    transition: all .3s ease-in-out;
+ }
+
+ .border-r10{
+    border-radius: 10px;
+ }
+
+ .subHeadingMargin-b {
+     margin-bottom: 1em;
+ }
+/*------------ Main Formats -----------*/
+
+/*------------- Navigation Bar --------*/
+.nav-box{
+    width: 100%;
+}
+.navbar{
+    z-index: 999;
+    position: fixed;
+    width: 98%;
+    border-radius: 90px;
+    background-color: #000;
+    align-items: center;
+    left: 50%;
+    top: 7px;
+    transform: translate(-50%,0);
+}
+
+.navbar .container-fluid{
+    padding: 0 7%;
+}
+
+.navbar.sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgb(112, 112, 112);
+}
+
+.navbar .logo-img {
+    content: url(/assets/img/logo-White.png);
+    width: 4em;
+}
+
+.navbar.sticky .logo-img {
+    content: url(/assets/img/logo-Black.png);
+    width: 4em;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover{
+    color: rgb(233, 233, 233);
+}
+
+.navbar.sticky a:hover {
+    color: rgb(97, 97, 97);
+}
+
+
+.navbar.sticky a {
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
+
+.bar:nth-child(1) {
+    width: 25px;
+    height: 2px;
+}
+
+.bar:nth-child(2) {
+    width: 20px;
+    height: 2px;
+}
+
+.bar:nth-child(3) {
+    width: 25px;
+    height: 2px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+/*------------- Navigation Bar --------*/
+
+/*---------------- Banner -------------*/
+.banner {
+    position: relative;
+    background-size: cover;
+    object-fit: contain;
+    height: 83vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+    --bs-gutter-x: 0;
+}
+
+.banner .textBx{
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.banner .textBx h2 {
+    font-size: 4em;
+    color: orangered;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-weight: 700;
+}
+
+.banner #name {
+    font-size: 2em;
+}
+
+.banner h3 {
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#hello {
+    color: lime;
+}
+
+.social-IconsBox {
+    position: fixed;
+    display: grid;
+    box-sizing: border-box;
+    left: 0;
+    top: 47%;
+    transform: translate(0, -47%);
+    background-color: rgb(27, 27, 27);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 999;
+}
+
+.banner .social-IconsBox .socialImgBox {
+    width: 30px;
+    margin: 13px 8px;
+}
+
+.banner .social-IconsBox .socialImgBox .socialImg{
+    width: 100%;
+}
+
+.banner .social-IconsBox .socialImgBox:hover {
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+.downArrowContainer {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.downArrowContainer p {
+    font-weight: bolder;
+    color: rgb(36, 36, 36);
+    font-family: Bebas Neue;
+    font-size: 25px;
+}
+
+.m_scroll_arrows {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: 0 0 3px 4px;
+
+    width: 17px;
+    height: 17px;
+}
+
+.btn-About:hover{
+    background-color: rgb(187, 58, 11);
+    color: #fff;
+}
+
+.btn-About {
+    background-color: rgb(233, 69, 10);
+}
+/*--------------- Banner ---------------*/
+
+/*--------------- About Me--------------*/
+.aboutMe-Sect .img-box-C{
+    display: grid;
+    place-items: center;
+}
+.aboutMe-Sect .img-box{
+    width: 23em;
+    height: 23em;
+}
+
+.aboutMe-Sect .img-box .about-img{
+    width: 100%;
+    border-right: 6px solid rgb(0, 110, 255);
+}
+
+.aboutMe-Sect h3{
+    margin-top: 2em;
+}
+/*--------------- About Me--------------*/
+
+/*--------------- Skills ---------------*/
+.skill-container{
+  background: url(/assets/img/skillsBack.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  background-position: bottom;
+}
+
+.skill-container .card{
+    padding: 20px 10px;
+    background: #222;
+    color: #fff;
+    max-width: 480px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.skill-container .card:hover{
+    background-color: #181818;
+}
+
+.skill-container .img-fluid{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.skill-container .card-body{
+    padding-bottom: 0;
+}
+/*--------------- Skills ---------------*/
+
+/*------------- Projects ---------------*/
+.projects .card{
+    margin: 20px;
+    border-radius: 0;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    box-shadow: 0 7px 9px rgb(172, 172, 172);
+}
+
+.projects .card:hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 11px 12px rgb(175, 175, 175);
+}
+
+.projects .card img{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.projects .card .card-title{
+    font-size: 1.2em;
+}
+
+.projects .button-box{
+    align-items: center;
+}
+
+.projects .button-box .socialImg{
+    width: 2.3em;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.tools{
+    margin-bottom: 5px;
+}
+/*------------- Projects ---------------*/
+
+/*-------------- Footer ----------------*/
+.footer-container {
+    background-color: #111;
+    padding: 70px 70px 30px;
+}
+
+.contactInfo {
+    min-width: 40%;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: rgb(233, 69, 10);
+    margin-bottom: 4px;
+}
+
+.formBx {
+    min-width: 40%;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#nameField{
+    margin-top: 20px;
+}
+
+.formBx form input,
+.formBx form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #111;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formBx form input:hover,
+.formBx form textarea:hover {
+    border-bottom: 3px solid rgb(233, 69, 10);
+}
+
+.formBx form input:focus-within,
+.formBx form textarea:focus-within {
+    border-bottom: 3px solid rgb(233, 69, 10);
+}
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+    color: #999;
+}
+
+.formBx .btn {
+    width: 40px;
+    background-color: rgb(233, 69, 10);
+    cursor: pointer;
+}
+
+.formBx .btn:hover {
+    background-color: rgb(187, 58, 11);
+        color: #fff;
+}
+
+.copyright-container {
+    background: #000;
+    color: #fff;
+}
+
+.copyright p {
+    font-size: 13px;
+    margin: 0;
+    padding: 10px 0;
+}
+/*-------------- Footer ----------------*/
+
+@media only screen and (max-width: 2561px) {
+   .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 1520px;
+        }
+    /*----------- Banner -------*/
+    .banner {
+        background-image: url(/assets/img/bannerBack1440.jpg);
+        height: 90vh;
+    }
+    /*----------- Banner -------*/
+
+    /*----- Navigation Bar -----*/
+    .navbar {
+        height: 4.4em;
+    }
+    
+    .navbar.sticky {
+        height: 4em;
+    }
+    .navbar a {
+       font-size: 1.2em;
+       padding: 0 20px;
+    }
+
+    .navbar li{
+        padding: 0 20px;
+    }
+
+    .navbar .logo-img {
+    width: 2.8em;
+    }
+
+    .navbar.sticky .logo-img {
+    width: 2.8em;
+    }
+    /*----- Navigation Bar -----*/
+
+    /*--------- Skills --------*/
+    .skill-container .img-fluid {
+        max-width: 30%;
+    }
+
+    .skill-container .card {
+        padding: 20px 0;
+    }
+    /*---------- Skills --------*/
+
+     /*---------- Projects --------*/
+    .projects .card{
+       width: 39em;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .projects .row .col{
+        justify-content: space-evenly;
+    }
+    /*---------- Projects --------*/
+
+    .formBx .btn {
+       width: 70px
+    }
+
+   /*----------- about ------------*/
+   .aboutMe-Sect .img-box {
+       width: 15em;
+       height: 15em;
+   }
+   /*----------- about ------------*/
+}
+
+
+@media only screen and (max-width: 1440px) {
+   .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 1120px;
+        }
+    /*----------- Main Formats -------*/
+    p {
+        font-size: 1em;
+    }
+
+    .btn {
+    margin-top: 10px;
+    padding: 7px;
+    font-size: 0.6em;
+    }
+
+    /*----------- Main Formats -------*/
+
+    /*----- Navigation Bar -----*/
+    .navbar a {
+       font-size: 16px;
+       padding: 5px 14px;
+    }
+
+    .navbar li{
+        padding: 0 7px;
+    }
+
+    .navbar .logo-img {
+    width: 3.2em;
+    padding: 3px 0;
+    }
+
+    .navbar{
+        height: 4.2em;
+    }
+
+    .navbar.sticky{
+        height: 4.6em;
+    }
+
+    .navbar.sticky .logo-img {
+    width: 3.2em;
+    }
+    /*----- Navigation Bar -----*/
+
+    /*----------- Banner -------*/
+    .banner {
+        background-image: url(/assets/img/bannerBack1440.jpg);
+        max-height: 88vh;
+    }
+
+    .downArrowContainer .arrowImgBox {
+        height: 30px;
+    }
+
+    .downArrowContainer p {
+    font-size: 20px;
+    }
+
+    .m_scroll_arrows{
+        width: 13px;
+        height: 13px;
+    }
+
+    
+    .banner h2 {
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1em;
+    }
+
+    .banner h2 span {
+       font-weight: 700;
+   }
+
+   .banner #name {
+    font-size: 2em;
+   }
+
+   .banner h3 {
+       font-size: 1.2em;
+       color: #fff;
+       font-weight: 500;
+       margin-bottom: 30px;
+   }
+    /*----------- Banner -------*/
+    .aboutMe-Sect .img-box {
+    width: 13em;
+    height: 13em;
+   }
+
+.skill-container .card {
+    padding: 15px 5px;
+    width: 98%;
+    max-width: 220px;
+}
+
+    .skill-container .card-body p{
+        font-size: 1em;
+    }
+
+    .skill-container .img-fluid {
+        max-width: 37%;
+    }
+
+    .formBx .btn{
+        width: 60px;
+    }
+
+    .projects .card {
+        max-width: 500px;
+        width: 90%;
+    }
+
+    .projects .button-box .socialImg{
+    width: 2.3em;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+    /*------------ Main Formats -----------*/
+    body {
+        font-size: 1em;
+        background-color: #ececec;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+    
+    .btn {
+        margin-top: 10px;
+        padding: 3px;
+        font-size: 7px;
+        border-radius: 4px;
+    }
+    
+    .mg-banner {
+        padding: 0 7%;
+    }
+    
+    .heading {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+        color: #111;
+    }
+    
+    .heading h2 {
+        font-size: 2em;
+    }
+    
+    .heading p {
+        font-size: 0.9em;
+        font-family: sans-serif;
+    }
+    
+    .py-50 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    h2 {
+        margin-bottom: 0;
+        margin-block-end: 0;
+    }
+    
+    .arrowSize {
+        font-size: 0.4em;
+        position: relative;
+        top: -6px;
+        padding: 0 2px;
+    }
+    
+    .transitionSpeed {
+        transition: all .4s ease-in-out;
+    }
+    
+    .border-r10 {
+        border-radius: 10px;
+    }
+    
+    .subHeadingMargin-b {
+        margin-bottom: 0.9em;
+    }
+    
+    /*------------ Main Formats -----------*/
+    
+    /*----- Navigation Bar -----*/
+    .navbar.sticky .bar{
+       background-color: black;
+    }
+
+    .navbar.sticky .logo-box {
+       width: 4em;
+       background-size: contain;
+    }
+
+    .navbar.sticky .logo-img {
+       width: 2.5em;
+    }
+
+    .navbar .logo-img{
+      width: 2.5em;
+    }
+
+    .navbar {
+        height: 3.7em;
+    }
+    
+    .navbar.sticky {
+        height: 3.2em;
+    }
+    
+    .navbar.sticky ul li a,
+    .navbar ul li a {
+        font-size: 1em;
+        padding: 10px;
+    }
+    /*----- Navigation Bar -----*/        
+    /*---------------- Banner -------------*/    
+    .banner {
+         background-image: url(/assets/img/bannerBack1024.jpg);
+        max-height: 70vh;
+    }
+    
+    .banner .textBx h2 {
+        font-size: 3.6em;
+        line-height: 1.5em;
+    }
+    
+    .banner h2 span {
+        font-weight: 700;
+    }
+    
+    .banner #name {
+        font-size: 2em;
+    }
+    
+    .banner h3 {
+        font-size: 1.4em;
+        margin-top: 3px;
+        margin-bottom: 30px;
+    }
+    
+    .social-IconsBox {
+        left: 0;
+        top: 47%;
+        transform: translate(0, -47%);
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    
+    .banner .social-IconsBox .socialImgBox {
+        width: 1.1em;
+        margin: 4px 4px;
+    }
+    
+    .banner .social-IconsBox .socialImgBox:hover {
+        transform: scale(1.2);
+        transition: all .4s ease-in-out;
+    }
+    
+    .mouse_scroll .arrowsBx .m_scroll_arrows {
+        width: 5px;
+        height: 5px;
+        text-align: center;
+        margin: 0;
+        border-right: 0.5px solid #000;
+        border-bottom: 0.5px solid #000;
+    }
+    
+    .downArrowContainer {
+        height: 20px;
+    }
+    
+    .downArrowContainer p {
+        font-size: 0.8em;
+    }   
+    /*--------------- Banner ---------------*/
+    
+    /*--------------- About Me--------------*/
+    .aboutMe-Sect .img-box-C {
+        display: grid;
+        place-items: center;
+    }
+    
+    .aboutMe-Sect {
+        width: 95%;
+    }
+    
+    .aboutMe-Sect .img-box {
+        width: 13em;
+        height: 13em;
+    }
+    
+    .aboutMe-Sect .img-box .about-img {
+        width: 100%;
+        border-right: 3px solid rgb(255, 81, 0);
+    }
+    
+    .aboutMe-Sect h3 {
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+    
+    /*--------------- About Me--------------*/
+    
+    /*--------------- Skills ---------------*/
+    .skill-container {
+        background-position: left;
+        background-position-x: -30px;
+        text-align: center;
+    
+    }
+    
+    .skill-container .row {
+        row-gap: 28px;
+        justify-content: space-evenly;
+    }
+    
+    .skill-container .card {
+        padding: 15px 5px;
+        width: 98%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    
+    .skill-container .img-fluid {
+        max-width: 36%;
+    }
+    
+    .skill-container .card-body {
+        padding: 20px 5px 0 5px;
+        padding-bottom: 0;
+    }
+    
+    .skill-container .card-body p {
+        margin-bottom: 0;
+        font-size: 0.9em;
+    }
+    
+    .skill-container h5 {
+        margin-bottom: 0;
+    }
+    
+    /*--------------- Skills ---------------*/
+    
+    /*------------- Projects ---------------*/
+    .projects .col-12 {
+        padding: 0;
+    }
+    
+    .projects .card {
+        margin: 0 20px;
+        width: initial;
+    }
+    
+    .projects .row {
+        row-gap: 28px;
+    }
+    
+    .projects .card img {
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+    }
+    
+    .projects .card .card-title {
+        font-size: 1em;
+    }
+    
+    .projects .button-box {
+        align-items: center;
+    }
+    
+    .projects .button-box .socialImg {
+        width: 2em;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+    
+    .projects .btn {
+        margin-top: 2px;
+    }
+    
+    .tools {
+        font-size: 0.7em;
+    }
+    
+    /*------------- Projects ---------------*/
+    
+    /*-------------- Footer ----------------*/
+    .footer-container {
+        background-color: #111;
+        padding: 35px 40px 20px 40px;
+    }
+    
+    .contactInfo {
+        min-width: 100%;
+    }
+    
+    .contactInfoBx .box {
+        padding: 2px 4px;
+    }
+    
+    .contactInfoBx p {
+        margin-bottom: 3px;
+    }
+    
+    .contactInfoBx .box .text {
+        margin-left: 0;
+        font-size: 1em;
+    }
+    
+    .contactInfoBx .box .text h3 {
+        font-size: 0.9em;
+        margin-bottom: 4px;
+    }
+    
+    .formBx {
+        min-width: 40%;
+        margin-top: 1rem;
+    }
+    
+    
+    .formBx form h3,
+    .contactInfo h3 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+    #nameField {
+        margin-top: 8px;
+    }
+    
+    .formBx form input,
+    .formBx form textarea {
+        margin-bottom: 8px;
+        padding: 3px;
+        width: 90%;
+        font-size: 0.8em;
+        border-bottom: 2px solid #111;
+    }
+    
+    
+    .formBx form input:focus-within,
+    .formBx form textarea:focus-within {
+        border-bottom: 2px solid rgb(233, 69, 10);
+    }
+    
+    .formBx form textarea {
+        min-height: 100px;
+    }
+    
+    
+    .formBx .btn {
+        max-width: 60px;
+        margin-top: 4px;
+    }
+    
+    .copyright p {
+        font-size: 0.6em;
+        margin: 0;
+        padding: 6px 0;
+    }
+    /*-------------- Footer ----------------*/
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*------------ Main Formats -----------*/
+    body {
+        font-size: 0.8em;
+    }
+    
+    .btn {
+        font-size: 5px;
+    }
+    
+    .py-50 {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+    
+    .arrowSize {
+        font-size: 0.4em;
+        position: relative;
+        top: -6px;
+        padding: 0 2px;
+    } 
+    /*------------ Main Formats -----------*/
+    
+    /*----- Navigation Bar -----*/
+    .hamburger{
+       display: initial;
+    }
+
+    .navbar .navbar-nav{
+       position: fixed;
+       left: -100%;
+       top: 7rem;
+       flex-direction: column;
+       background-color: #e0e0e0;;
+       width: 100%;
+       text-align: center;
+       transition: 0.3s all ease-in-out;
+       z-index: 999;
+       padding: 0;
+    }
+
+    .navbar.sticky .bar{
+       background-color: black;
+    }
+
+    .navbar.sticky a,
+    .navbar a{
+       color: #000;
+    }
+
+    .navbar.sticky .logo-box {
+       width: 4em;
+       background-size: contain;
+    }
+
+    .navbar.sticky .logo-img {
+       width: 2em;
+    }
+
+    .navbar .logo-img{
+      width: 2em;
+    }
+
+    .nav-menu.active{
+       left: 0;
+    }
+    .navbar .navbar-nav {
+        top: 4em;
+    }
+    
+    .nav-menu.active {
+        height: initial;
+    }
+            
+    .navbar {
+        height: 3em;
+        width: 100%;
+        border-radius: 0;
+        top: 0;
+    }
+    
+    .navbar.sticky {
+        height: 3.7em;
+    }
+    
+    .navbar.sticky ul li a,
+    .navbar ul li a {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    
+    /*------------ Navigation Bar ---------*/ 
+
+    /*---------------- Banner -------------*/    
+    .banner {
+        background-image: url(/assets/img/bannerBackTablet.jpg);
+        max-height: 70vh;
+    }
+    
+    .banner .textBx h2 {
+        font-size: 2.4em;
+    }
+    
+    .banner h3 {
+        font-size: 1em;
+    }
+    
+    .banner .social-IconsBox .socialImgBox {
+        width: 1.1em;
+        margin: 2px 4px;
+    } 
+    /*--------------- Banner ---------------*/
+    
+    /*--------------- About Me--------------*/     
+    .aboutMe-Sect .img-box {
+        width: 13em;
+        height: 13em;
+    }  
+    /*--------------- About Me--------------*/
+}
+
+@media only screen and (max-width: 425px) {
+    /*------------ Main Formats -----------*/
+    body {
+        font-size: 0.7em;
+    }
+    
+    .btn {
+        font-size: 5px;
+    }
+    
+    .py-50 {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    } 
+    /*------------ Main Formats -----------*/
+    
+    /*----- Navigation Bar -----*/
+    .navbar .navbar-nav {
+        top: 4em;
+    }
+    
+    .nav-menu.active {
+        height: initial;
+    }
+    
+    .navbar.sticky .logo-img {
+        width: 1.7em;
+    }
+    
+    .navbar .logo-img {
+        width: 1.7em;
+    }
+    
+    .navbar {
+        height: 3.8em;
+    }
+    
+    .navbar.sticky {
+        height: 3.3em;
+    }
+    
+    .navbar.sticky ul li a,
+    .navbar ul li a {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    
+    .bar:nth-child(1) {
+        height: 1px;
+        width: 13px;
+    }
+    
+    .bar:nth-child(2) {
+        height: 1px;
+        width: 10px;
+    }
+    
+    .bar:nth-child(3) {
+        height: 1px;
+        width: 13px;
+    }
+    
+    .bar {
+        margin: 3px auto;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(4.2px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-4.2px) rotate(-45deg);
+    }
+    /*----- Navigation Bar -----*/        
+    /*---------------- Banner -------------*/    
+    .banner {
+        background-image: url(/assets/img/bannerBack425.jpg);
+        max-height: 70vh;
+    }
+    
+    .banner .textBx h2 {
+        font-size: 2.2em;
+    }
+     
+    .banner h3 {
+        font-size: 0.8em;
+    }   
+    
+    .banner .social-IconsBox .socialImgBox {
+        width: 1em;
+        margin: 2px 4px;
+    }
+
+    /*--------------- Banner ---------------*/
+    
+    /*--------------- About Me--------------*/  
+    .aboutMe-Sect {
+        width: initial;
+    }
+    
+    .aboutMe-Sect .img-box {
+        width: 11em;
+        height: 11em;
+    }
+    
+    .aboutMe-Sect .img-box .about-img {
+        width: 100%;
+        border-right: 3px solid rgb(255, 81, 0);
+    }  
+    /*--------------- About Me--------------*/
+    
+    /*--------------- Skills ---------------*/
+    .skill-container {
+        background-position-x: -30px;
+    }
+    
+    .skill-container .row {
+        row-gap: 18px;
+    }
+    
+    .skill-container .card {
+        padding: 10px 5px;
+    }
+    
+    .skill-container .img-fluid {
+        max-width: 40%;
+    }
+    
+    .skill-container .card-body {
+        padding: 9px 5px 0 5px;
+    }
+    /*--------------- Skills ---------------*/
+    
+    /*------------- Projects ---------------*/  
+    .projects .row {
+        row-gap: 13px;
+    } 
+    /*------------- Projects ---------------*/
+    
+    /*-------------- Footer ----------------*/             
+    .formBx form textarea {
+        min-height: 90px;
+    }
+    /*-------------- Footer ----------------*/
+}
+
+
+@media only screen and (max-width: 375px) {
+    .btn{
+        font-size: 4px;
+    }
+    /*----- Navigation Bar -----*/ 
+    .navbar.sticky .logo-img {
+        width: 1.7em;
+    }
+    
+    .navbar .logo-img {
+        width: 1.7em;
+    }
+    
+    .navbar {
+        height: 3.7em;
+    }
+    
+    .navbar.sticky {
+        height: 3.3em;
+    }
+     /*----- Navigation Bar -----*/        
+    /*---------------- Banner -------------*/    
+    .banner {
+        background-image: url(/assets/img/bannerBack375.jpg);
+        max-height: 60vh;
+    }
+    
+    .banner .textBx h2 {
+        font-size: 2.1em;
+        line-height: 1.5em;
+    }
+    /*--------------- Banner ---------------*/
+    
+    /*--------------- About Me--------------*/   
+    .aboutMe-Sect .img-box {
+        width: 11em;
+        height: 11em;
+    }  
+    /*--------------- About Me--------------*/
+}
+
+@media only screen and (max-width: 320px) {
+    /*------------ Main Formats -----------*/
+    body {
+        font-size: 0.6em;
+    }
+
+    .btn {
+        font-size: 4px;
+        letter-spacing: 1px;
+    }
+
+    .py-50 {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    /*------------ Main Formats -----------*/
+
+    /*----- Navigation Bar -----*/
+    .navbar.sticky .logo-img {
+       width: 1.5em;
+    }
+
+   .navbar .logo-img {
+       width: 1.5em;
+    }
+  
+    .navbar {
+      height: 3.5em;
+    }
+  
+    .navbar.sticky {
+      height: 3em;
+    }
+    /*----------- Navigation Bar ----------*/
+    
+    /*---------------- Banner -------------*/
+    .banner {
+        background-image: url(/assets/img/bannerBack320.jpg);
+        max-height: 60vh;
+    }
+
+    .banner .textBx h2 {
+        font-size: 1.9em;
+        line-height: 1.5em;
+    }
+
+    .arrowSize {
+        font-size: 0.5em;
+        top: -3px;
+    }
+
+    .banner .social-IconsBox .socialImgBox {
+        width: 1em;
+        margin: 2px 4px;
+    }
+
+    .downArrowContainer{
+        height: 11px;
+    }
+    /*--------------- Banner ---------------*/
+
+    /*--------------- About Me--------------*/ 
+    .aboutMe-Sect .img-box {
+        width: 10em;
+        height: 10em;
+    }
+
+    .aboutMe-Sect H3{
+        font-size: 1.1em;
+    }
+    /*--------------- About Me--------------*/
+
+    /*--------------- Skills ---------------*/  
+    .skill-container .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*--------------- Skills ---------------*/
+
+    /*-------------- Footer ----------------*/
+    .contactInfoBx .box .text {
+        font-size: 0.9em;
+    }
+
+    .formBx form h3,
+    .contactInfo h3 {
+        font-size: 1em;
+    }
+
+    #nameField{
+        margin-top: 8px;
+    }
+
+    .formBx form input,
+    .formBx form textarea {
+        font-size: 0.7em;
+    }
+
+
+
+    .formBx form textarea {
+        min-height: 90px;
+    }
+
+
+    .formBx .btn {
+        width: 30px;
+    }
+
+    .copyright p {
+        font-size: 0.5em;
+    }
+    /*-------------- Footer ----------------*/
+}
+
+@media only screen and (max-width:280px) {
+    .navbar .logo {
+        background-image: url(/assets/img/logoWhite.png);
+        width: 10em;
+        background-position-x: -20px;
+    }
+}
+
+
+
+

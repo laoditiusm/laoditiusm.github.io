@@ -1,0 +1,19 @@
+<div class="skill-container">
+    <div class="container  py-50 text-center" id="skills">
+        <div class="heading">
+            <h2 class="text-white">My Skills</h2>
+            <p class="text-white">This is what I can do</p>
+        </div>
+        <div class="row mx-width">
+            <div class=" col-lg-3 col-md-6 col-6" *ngFor="let skill of skills">
+                <div class="card border-r10">
+                    <img [src]="skill.image" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="h5">{{skill.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
