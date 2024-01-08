@@ -7,6 +7,7 @@ interface Project {
   tools: string;
   id: string;
   link: string;
+  website: string;
 }
 
 @Component({
@@ -23,7 +24,8 @@ export class MyProjectsComponent {
         'A local catering business residing in Middleburg, Mpumalanga. Established 2020. 100 Emplopyess',
       tools: 'HTML  CSS  JS  PHP  SQL',
       id: '1',
-      link: 'https://github.com/Laoditius-M/Florence-Palm-Resort-Website',
+      link: 'https://github.com/Laoditius-M/Padi-s-Kitchen-Delight-Website',
+      website: 'https://ephemeral-phoenix-6af333.netlify.app/',
     },
     {
       title: 'Florence Palms Resort',
@@ -33,6 +35,7 @@ export class MyProjectsComponent {
       tools: 'HTML CSS JS PHP SQL',
       id: '2',
       link: 'https://github.com/Laoditius-M/Florence-Palm-Resort-Website',
+      website: 'https://ephemeral-phoenix-6af333.netlify.app/',
     },
   ];
 

@@ -118,7 +118,7 @@ ul{
 
 .navbar.sticky {
     background: #fff;
-    box-shadow: 0 2px 10px rgb(112, 112, 112);
+    box-shadow: 0 2px 9px rgb(104, 104, 104);
 }
 
 .navbar .logo-img {
@@ -313,9 +313,20 @@ ul{
     height: 23em;
 }
 
+.text-primary {
+    color: transparent;
+}
+
+.aboutMe-Sect .heading p {
+    color: orangered;
+}
+
+
+
 .aboutMe-Sect .img-box .about-img{
     width: 100%;
     border-right: 6px solid rgb(0, 110, 255);
+    border-radius: 10px;
 }
 
 .aboutMe-Sect h3{
@@ -395,6 +406,23 @@ ul{
 /*------------- Projects ---------------*/
 
 /*-------------- Footer ----------------*/
+.whiteSpace {
+    height: 5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whiteSpace h4 {
+    text-align: center;
+}
+
+.whiteSpace span {
+    color: rgb(0, 153, 255);
+    font-size: 2rem;
+}
+
 .footer-container {
     background-color: #111;
     padding: 70px 70px 30px;
@@ -608,9 +636,14 @@ ul{
     }
 
     .btn {
-    margin-top: 10px;
-    padding: 7px;
-    font-size: 0.6em;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    .heading p{
+        position: relative;
+        top: -10px;
     }
 
     /*----------- Main Formats -------*/
@@ -661,8 +694,7 @@ ul{
         width: 13px;
         height: 13px;
     }
-
-    
+ 
     .banner h2 {
     font-size: 1.4em;
     color: #fff;
@@ -686,15 +718,29 @@ ul{
    }
     /*----------- Banner -------*/
     .aboutMe-Sect .img-box {
-    width: 13em;
-    height: 13em;
+        width: 15em;
+        height: 15em;
+        position: relative;
+        top: -30px;
    }
 
-.skill-container .card {
-    padding: 15px 5px;
-    width: 98%;
-    max-width: 220px;
-}
+   .banner .social-IconsBox .socialImgBox {
+       width: 23px;
+       margin: 13px 8px;
+   }
+
+   .aboutMe-Sect h3 {
+       font-size: 1.5rem;
+   }
+
+   .fullS{
+    font-size: 3rem;
+   }
+
+    .skill-container .card {
+        width: 98%;
+        max-width: 220px;
+    }
 
     .skill-container .card-body p{
         font-size: 1em;
@@ -717,7 +763,11 @@ ul{
     width: 2.3em;
     margin-left: 4px;
     margin-top: 10px;
-}
+    }
+
+    .aboutMe-Sect h3 {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -733,8 +783,8 @@ ul{
     
     .btn {
         margin-top: 10px;
-        padding: 3px;
-        font-size: 7px;
+        padding: 8px;
+        font-size: 9px;
         border-radius: 4px;
     }
     
@@ -756,6 +806,7 @@ ul{
     .heading p {
         font-size: 0.9em;
         font-family: sans-serif;
+        margin-top: 10px;
     }
     
     .py-50 {
@@ -818,7 +869,7 @@ ul{
     .navbar.sticky ul li a,
     .navbar ul li a {
         font-size: 1em;
-        padding: 10px;
+        padding: 17px;
     }
     /*----- Navigation Bar -----*/        
     /*---------------- Banner -------------*/    
@@ -828,7 +879,7 @@ ul{
     }
     
     .banner .textBx h2 {
-        font-size: 3.6em;
+        font-size: 3.8em;
         line-height: 1.5em;
     }
     
@@ -899,7 +950,7 @@ ul{
     
     .aboutMe-Sect .img-box .about-img {
         width: 100%;
-        border-right: 3px solid rgb(255, 81, 0);
+        border-right: 3px solid rgb(0, 110, 255);
     }
     
     .aboutMe-Sect h3 {
@@ -978,7 +1029,6 @@ ul{
     
     .projects .button-box .socialImg {
         width: 2em;
-        margin-left: 10px;
         margin-top: 2px;
     }
     
@@ -1039,7 +1089,7 @@ ul{
     .formBx form input,
     .formBx form textarea {
         margin-bottom: 8px;
-        padding: 3px;
+        padding: 8px;
         width: 90%;
         font-size: 0.8em;
         border-bottom: 2px solid #111;
@@ -1091,6 +1141,10 @@ ul{
         top: -6px;
         padding: 0 2px;
     } 
+
+    .fullS{
+        font-size: 2rem;
+   }
     /*------------ Main Formats -----------*/
     
     /*----- Navigation Bar -----*/
@@ -1185,10 +1239,17 @@ ul{
     
     /*--------------- About Me--------------*/     
     .aboutMe-Sect .img-box {
-        width: 13em;
-        height: 13em;
+        width: 14em;
+        height: 14em;
     }  
     /*--------------- About Me--------------*/
+}
+
+@media only screen and (max-width: 760px) and (min-width: 426px){
+    .aboutMe-Sect .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1196,18 +1257,48 @@ ul{
     body {
         font-size: 0.7em;
     }
+
+    p{
+        font-size: 1em;
+     }
     
     .btn {
-        font-size: 5px;
+        font-size: 8px;
+        padding: 5px;
     }
     
     .py-50 {
-        padding-top: 44px;
+        padding-top: 20px;
         padding-bottom: 44px;
     } 
+
+    .heading h2{
+        margin-top: 16px;
+        margin-bottom: 8px;
+        font-size: 2.2em;
+    }
+
+    .heading p {
+        font-size: 1.1em;
+    }
+
+    .whiteSpace h4 {
+        font-size: 1.2em;
+    }
+
+    .whiteSpace {
+        height: 3rem;
+    }
+
+    .whiteSpace span {
+        font-size: 1rem;
+    }
     /*------------ Main Formats -----------*/
     
     /*----- Navigation Bar -----*/
+    .navbar {
+        padding: 1.7rem 7%;
+    }
     .navbar .navbar-nav {
         top: 4em;
     }
@@ -1217,11 +1308,11 @@ ul{
     }
     
     .navbar.sticky .logo-img {
-        width: 1.7em;
+        width: 2.3em;
     }
     
     .navbar .logo-img {
-        width: 1.7em;
+        width: 2.3em;
     }
     
     .navbar {
@@ -1234,23 +1325,23 @@ ul{
     
     .navbar.sticky ul li a,
     .navbar ul li a {
-        font-size: 0.9em;
+        font-size: 1.3em;
         padding: 10px;
     }
     
     .bar:nth-child(1) {
-        height: 1px;
-        width: 13px;
+        height: 2px;
+        width: 25px;
     }
     
     .bar:nth-child(2) {
-        height: 1px;
-        width: 10px;
+        height: 2px;
+        width: 25px;
     }
     
     .bar:nth-child(3) {
-        height: 1px;
-        width: 13px;
+        height: 2px;
+        width: 15x;
     }
     
     .bar {
@@ -1272,11 +1363,11 @@ ul{
     }
     
     .banner .textBx h2 {
-        font-size: 2.2em;
+        font-size: 2.6em;
     }
      
     .banner h3 {
-        font-size: 0.8em;
+        font-size: 1em;
     }   
     
     .banner .social-IconsBox .socialImgBox {
@@ -1284,21 +1375,44 @@ ul{
         margin: 2px 4px;
     }
 
+    .social-IconsBox {
+        padding: .5rem .6rem;
+        top: 80%;
+    }
+
+    .banner .social-IconsBox .socialImgBox .socialImg {
+        width: 1.1rem;
+        padding: .3rem 0;
+    }
     /*--------------- Banner ---------------*/
     
     /*--------------- About Me--------------*/  
     .aboutMe-Sect {
         width: initial;
     }
+
+    .aboutMe-Sect h3 {
+        font-size: 1.3em;
+    }
+
+    .aboutMe-Sect .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     
     .aboutMe-Sect .img-box {
-        width: 11em;
-        height: 11em;
+        width: 13em;
+        height: 12em;
+        margin-bottom: 20px;
     }
     
     .aboutMe-Sect .img-box .about-img {
         width: 100%;
+        height: 12em;
         border-right: 3px solid rgb(255, 81, 0);
+        border-radius: 10px;
+        margin-top: 2rem;
+        object-fit: cover;
     }  
     /*--------------- About Me--------------*/
     
@@ -1316,11 +1430,15 @@ ul{
     }
     
     .skill-container .img-fluid {
-        max-width: 40%;
+        max-width: 60%;
     }
     
     .skill-container .card-body {
         padding: 9px 5px 0 5px;
+    }
+
+    .skill-container .card-body p {
+        font-size: 1.1em;
     }
     /*--------------- Skills ---------------*/
     
@@ -1334,29 +1452,52 @@ ul{
     .formBx form textarea {
         min-height: 90px;
     }
+
+    .formBx form input, .formBx form textarea {
+        font-size: 1.1em;
+        padding: 5px;;
+    }
+
+    .contactInfo h3 {
+    font-size: 1.3em;
+    }
+
+    .contactInfoBx .box .text h3 {
+        font-size: 1.1em;
+    }
+
+    .contactInfoBx p {
+        font-size: 1.1em;
+    }
+
+    .formBx form h3 {
+        font-size: 1.1em;
+    }
     /*-------------- Footer ----------------*/
+
+    .downArrowContainer p {
+        font-size: 1.2em;
+    }
 }
 
 
 @media only screen and (max-width: 375px) {
-    .btn{
-        font-size: 4px;
-    }
+    
     /*----- Navigation Bar -----*/ 
     .navbar.sticky .logo-img {
-        width: 1.7em;
+        width: 2em;
     }
     
     .navbar .logo-img {
-        width: 1.7em;
+        width: 2em;
     }
     
     .navbar {
-        height: 3.7em;
+        height: 3.8em;
     }
     
     .navbar.sticky {
-        height: 3.3em;
+        height: 3.6em;
     }
      /*----- Navigation Bar -----*/        
     /*---------------- Banner -------------*/    
@@ -1366,7 +1507,7 @@ ul{
     }
     
     .banner .textBx h2 {
-        font-size: 2.1em;
+        font-size: 2.2em;
         line-height: 1.5em;
     }
     /*--------------- Banner ---------------*/
@@ -1376,7 +1517,15 @@ ul{
         width: 11em;
         height: 11em;
     }  
+
+    .aboutMe-Sect h3 {
+        font-size: 1.1em;
+    }
     /*--------------- About Me--------------*/
+
+    .skill-container .card {
+        padding: 15px 10px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1386,7 +1535,7 @@ ul{
     }
 
     .btn {
-        font-size: 4px;
+        font-size: 8px;
         letter-spacing: 1px;
     }
 
@@ -1402,11 +1551,11 @@ ul{
     }
 
    .navbar .logo-img {
-       width: 1.5em;
+       width: 2em;
     }
   
     .navbar {
-      height: 3.5em;
+      height: 2em;
     }
   
     .navbar.sticky {
@@ -1420,8 +1569,18 @@ ul{
         max-height: 60vh;
     }
 
+    .mg-banner {
+        padding: 0;
+    }
+
+    .social-IconsBox {
+        top: 90%;
+        padding: .3rem .6 rem 0 .3rem;
+        justify-content: center;
+    }
+
     .banner .textBx h2 {
-        font-size: 1.9em;
+        font-size: 2.3em;
         line-height: 1.5em;
     }
 
@@ -1465,7 +1624,7 @@ ul{
 
     .formBx form h3,
     .contactInfo h3 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     #nameField{
@@ -1474,22 +1633,23 @@ ul{
 
     .formBx form input,
     .formBx form textarea {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
+    .contactInfoBx .box .text h3 {
+        font-size: 1.3em;
+    }
 
+    .contactInfoBx p {
+        font-size: 1.2em;
+    }
 
     .formBx form textarea {
         min-height: 90px;
     }
 
-
-    .formBx .btn {
-        width: 30px;
-    }
-
     .copyright p {
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
     /*-------------- Footer ----------------*/
 }

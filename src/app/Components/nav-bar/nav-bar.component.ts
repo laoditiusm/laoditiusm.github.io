@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 declare var $: any;
 
 @Component({
@@ -7,6 +8,9 @@ declare var $: any;
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent {
+  navLinks = document.querySelectorAll('.nav-item');
+
+  constructor() {}
   ngOnInit(): void {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
