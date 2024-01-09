@@ -209,7 +209,7 @@ ul{
 }
 
 .banner .textBx h2 {
-    font-size: 4em;
+    font-size: 8em;
     color: orangered;
     font-weight: 500;
     line-height: 1.5em;
@@ -224,7 +224,7 @@ ul{
 }
 
 .banner h3 {
-    font-size: 1.3em;
+    font-size: 2em;
     color: #fff;
     font-weight: 500;
     margin-bottom: 30px;
@@ -644,6 +644,10 @@ ul{
     .heading p{
         position: relative;
         top: -10px;
+    }
+
+    .banner .textBx h2 {
+        font-size: 5em;
     }
 
     /*----------- Main Formats -------*/
